@@ -2127,7 +2127,7 @@ body {
 }
 .clients_list_container .client_card img {
   width: 100%;
-  height: 100%;
+  height: 130px;
   object-fit: contain;
 }
 .clients_list_container .client_card:hover {
