@@ -138,7 +138,7 @@ $(".services_carousel").owlCarousel({
   // autoplay: true,
   margin: 20,
   autoplayTimeout: 1000,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 2000,
   responsive: {
     0: {
