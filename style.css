@@ -202,6 +202,7 @@ body {
     display: block;
     width: 30px;
     user-select: none;
+    cursor: pointer;
   }
   .header_logo {
     width: 160px;
@@ -225,19 +226,22 @@ body {
   }
   .header_nav_items_container {
     flex-direction: column;
-    gap: 1.25rem;
+    gap: .15rem;
+    align-items: start;
   }
   .main_header .header_nav_item {
     font-size: 14px;
     color: var(--primary-color);
+    text-align: left;
   }
   .main_header.scrolled .header_nav_item {
     color: var(--primary-color);
   }
   .header_contact_btn {
-    padding: 0.5rem 1.25rem;
+    /* padding: 0.5rem 1.25rem; */
     border-radius: 10px;
-    font-size: 12px;
+    /* font-size: 12px; */
+    margin-top: -15px;
   }
   .main_header .pages_header_nav .header_nav_item {
     color: var(--primary-color);
@@ -245,6 +249,22 @@ body {
   .main_header .pages_header_nav .header_nav_item.active {
     color: var(--secondary-color);
   }
+  .header_nav_item .dropdown {
+    position: relative;
+    display: block;
+  }
+  .header_nav_item .dropdown{
+    background: transparent;
+    box-shadow: none;
+  }
+  .header_nav_item .dropdown a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333a9;
+    padding: 6px;
+    padding-left: 30px;
+  }
+
 }
 /* header section ends here */
 
@@ -1109,7 +1129,7 @@ body {
   height: 650px;
   border-radius: 50px;
   overflow: hidden;
-  background: url("assets/empowering_pic.jpeg") no-repeat center center;
+  background: url("assets/bg-02.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -1174,6 +1194,7 @@ body {
   }
   .empowering_card{
     margin-top: 0;
+    max-width: 100%;
   }
   .empowering_card_wrapper {
     gap: 2rem;
@@ -1647,7 +1668,6 @@ body {
   font-weight: 400;
   line-height: 28px;
   color: var(--gray-color);
-  text-transform: capitalize;
 }
 .why_choose_enquiry_btn {
   margin-top: 1.65rem;
@@ -1888,7 +1908,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .service_card_container {
-    padding: 0 3% 6rem 3%;
+    padding: 0 3% 4rem 3%;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
@@ -2015,7 +2035,6 @@ body {
   line-height: 28px;
   color: #353535;
   margin-bottom: 5px;
-  text-transform: capitalize;
 }
 
 .envi-study p{
@@ -2023,7 +2042,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: #7c7c7c;
-  text-transform: capitalize;
 }
 
 .servicedetailstab-container .servicedetails_list {
@@ -2057,7 +2075,7 @@ body {
   .servicedetailstab-container .tab-list button {
     font-size: 12px;
     gap: 0.5rem;
-    max-width: 18rem;
+    max-width: 49%;
   }
   .servicedetailstab-container .tab-list button svg {
     rotate: 0deg;
@@ -2078,6 +2096,23 @@ body {
   }
 }
 
+@media only screen and (max-width: 600px) {
+    .servicedetailstab-container {
+      padding: 4rem 3%;
+    }
+    .about_details_container{
+      padding: 4rem 3%;
+    }
+    .why_choose_section {
+      padding: 4rem 3% 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+  .servicedetailstab-container .tab-list button {
+    max-width: 100%;
+  }
+}
 /* graph */
 /* #datasets-example-3 {
   display: flex;
@@ -2156,6 +2191,7 @@ body {
 @media only screen and (max-width: 700px) {
   .clients_list_container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 3% 4rem 3%;
   }
   .clients_list_container .client_card {
     max-width: 20rem;
@@ -2177,12 +2213,12 @@ body {
   width: 100%;
   max-width: 62rem;
   padding: 0.5rem;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 5rem auto;
   border-radius: 10px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 380px auto;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   gap: 2rem;
 }
 .contact_card .first_section {
@@ -2272,7 +2308,7 @@ body {
   border-radius: 4px;
 }
 .send_message_btn {
-  margin-left: auto;
+  margin: 0 auto;
   margin-top: 2rem;
   font-size: 14px;
   font-weight: 400;
@@ -2320,7 +2356,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   .contact_card {
-    margin: 0 auto 8rem auto;
+    margin: 0 auto 3rem auto;
     grid-template-columns: auto;
   }
   .contact_card .first_section .details_wrapper {
@@ -2334,9 +2370,19 @@ body {
 /* contact page ui ends here */
 
 /* founders experience section starts here */
-.experience_section {
+.experience_section{
+  padding-bottom: 8rem;
+}
+.single-experience_section {
   width: 100%;
-  padding: 8rem 3%;
+  padding: 6rem 3%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.double-experience_section {
+  width: 100%;
+  padding: 0rem 3%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -2388,16 +2434,32 @@ body {
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .double-experience_section .experience_second_section{
+    order: 2;
+  }
+}
 @media only screen and (max-width: 1144px) {
-  .experience_section {
+  .single-experience_section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .double-experience_section{
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
 }
 
 @media only screen and (max-width: 890px) {
-  .experience_section {
+  .single-experience_section {
     padding: 4rem 3%;
+  }
+  .double-experience_section{
+    padding: 0rem 3%;
+  }
+  .experience_section{
+    padding-bottom: 4rem;
   }
   .experience_title {
     font-size: 26px;
@@ -2426,6 +2488,15 @@ body {
   gap: 4rem;
 }
 
+.office-dtls-head{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-top-head{
+  padding-bottom: 30px;
+}
+
 .office-first-in {
   display: flex;
   flex-direction: column;
@@ -2444,15 +2515,15 @@ body {
 
 .office-dtls .contact_card {
   width: 100%;
-  max-width: 55rem;
+  max-width: 52rem;
   padding: 0.5rem;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 5rem auto;
   border-radius: 10px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 380px auto;
   box-shadow: none;
-  gap: 3rem;
+  gap: 2rem;
 }
 .office-dtls .contact_card .first_section {
   background: linear-gradient(90deg, #61bd69 0%, #249791 100%);
@@ -2518,7 +2589,10 @@ body {
 
 @media only screen and (max-width: 700px) {
   .office-dtls .contact_card {
-    margin: 0 auto 8rem auto;
+    margin: 0 auto 3rem auto;
     grid-template-columns: auto;
+  }
+  .contact-top-head{
+    padding-top: 4em;
   }
 }

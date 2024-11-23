@@ -23,6 +23,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <script src="js/all.js"></script>
+    <script src="js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -105,36 +109,6 @@
           </svg>
         </button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">
-          Waste Water Treatment
-          <svg
-            viewBox="0 0 28 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-
-        <button class="tab-button" onclick="openTab(event, 'tab4')">
-          Advanced Solution
-          <svg
-            viewBox="0 0 28 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-
-        <button class="tab-button" onclick="openTab(event, 'tab5')">
           Sludge Treatment
           <svg
             viewBox="0 0 28 32"
@@ -148,8 +122,36 @@
             />
           </svg>
         </button>
-        <button class="tab-button" onclick="openTab(event, 'tab6')">
+        <button class="tab-button" onclick="openTab(event, 'tab4')">
           Energy Production
+          <svg
+            viewBox="0 0 28 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'tab5')">
+          Waste Water Treatment
+          <svg
+            viewBox="0 0 28 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'tab6')">
+          Advanced Solution
           <svg
             viewBox="0 0 28 32"
             fill="none"
@@ -188,6 +190,8 @@
               <canvas id="chart"></canvas>
             </div>
           </div> -->
+
+          <h2 class="servicedetails_title_text">Feasibility Study Process</h2>
           <div class="graph-img">
             <img src="assets/graph.jpg" alt="">
           </div>
@@ -204,106 +208,60 @@
           <div class="envi-study">
             <h4>Environmental Studies :</h4>
             <p>
-              We Conduct Thorough Studies To Assess Environmental Impact, Helping To Make Informed Decisions About Industrial Projects.
+              We conduct thorough studies to assess environmental impact, helping to make informed decisions about industrial projects. 
             </p>
 
             <h4 class="mt-3">Environmental Consulting :</h4>
             <p>
-              We Offer Specialized Consulting Services To Assist Companies In Complying With Environmental Regulations And Achieving Sustainability Goals.
+              We offer specialized consulting services to assist companies in complying with environmental regulations and achieving sustainability goals.
             </p>
           </div>
-          <ul class="servicedetails_list">
+          <!-- <ul class="servicedetails_list">
             <li>Feasibility Study</li>
             <li>Securing Financing</li>
             <li>Project Management</li>
             <li>Permitting</li>
-          </ul>
-
+          </ul> -->
         </div>
         <div id="tab3" class="tab-pane">
-          <div class="servicedetails_image_wrapper">
-            <img src="assets/services/water_treatment_2.jpg" alt="" />
-            <div class="border_card"></div>
-          </div>
-          <h2 class="servicedetails_title_text">Waste Water Treatment</h2>
-          <div class="envi-study">
-            <h4>Design and source industrial, municipal waste water treatment plants : </h4>
-            <p>
-              We develop Designs That Meet Each Client’s Needs, Considering Environmental Standards And Local Regulations
-            </p>
-
-            <h4>System installation : </h4>
-            <p>
-              We provide Comprehensive Installation Services For Plants, Ranging From Civil Works To Equipment Installation And Commissioning.
-            </p>
-
-            <h4> Maintenance and technical support:</h4>
-            <p>
-              We Provide Maintenance And Technical Support Services To Ensure Efficient Operation Of Plants Year-round.
-            </p>
-          </div>
-          <ul class="servicedetails_list">
-            <li>Aerated Treatment</li>
-            <li>Anaerobic Digestion</li>
-            <li>Filtration</li>
-          </ul>
-        </div>
-
-        <div id="tab4" class="tab-pane">
-          <h2 class="servicedetails_title_text">Advanced Solutions</h2>
-          <div class="envi-study">
-            <h4></h4>
-            <p>
-              Sludge can be valorized and re-used in many applications that will allow for cost savings and off-take to various industries, 
-              energy intensive industries or even in agriculture. This treatment will allow for a zero- discharge solution that may reduce reliance on landfills. 
-              Potential applications include : 
-            </p>
-          </div>
-
-          <div class="service_card_container new-service_card_container">
-            <div class="card">
-              <a href="advancedservicedetails.html?tab=tab1">
-                <div class="imge_wrapper">
-                  <img src="assets/services/thermal-Hydrolysis-pre-treatment.png" alt="">
-                  <div class="border_card"></div>
-                </div>
-                <h3 class="label_text">
-                  Thermal Hydrolysis pre-treatment
-                </h3>
-              </a>
-            </div>
-            <div class="card">
-              <a href="advancedservicedetails.html?tab=tab2">
-                <div class="imge_wrapper">
-                  <img src="assets/services/Feedstock-diversification.jpg" alt="">
-                  <div class="border_card"></div>
-                </div>
-                <h3 class="label_text">Feedstock diversification</h3></a>
-            </div>
-            <div class="card">
-              <a href="advancedservicedetails.html?tab=tab3">
-                <div class="imge_wrapper">
-                  <img src="assets/services/order-management.jpg" alt="">
-                  <div class="border_card"></div>
-                </div>
-                <h3 class="label_text">Advanced order management</h3></a>
-            </div>
-          </div>
-        </div>
-
-        <div id="tab5" class="tab-pane">
           <div class="servicedetails_image_wrapper">
             <img src="assets/services/sludge.jpeg" alt="" />
             <div class="border_card"></div>
           </div>
           <h2 class="servicedetails_title_text">Sludge Treatment</h2>
-          <ul class="servicedetails_list">
+          <div class="envi-study">
+            <h4></h4>
+            <p>Sludge can be valorized and re-used in many applications that will allow for cost savings and off-take to various industries, energy intensive 
+              industries or even in agriculture. This treatment will allow for a zero- discharge solution that may reduce reliance on landfills. 
+              Potential applications include:</p>
+
+            <h4>Biogas Production</h4>
+            <p>
+              Is a renewable energy process where organic materials, such as food waste or agricultural residues, are decomposed by bacteria in anaerobic 
+              conditions to produce methane gas. This biogas can be used for heating, electricity generation, or as a vehicle fuel. It's an eco-friendly 
+              solution for waste management and reducing greenhouse gas emissions.
+            </p>
+
+            <h4>Composting</h4>
+            <p>Is the natural process of breaking down organic waste, like food scraps and yard trimmings, into nutrient-rich soil. It helps reduce landfill waste and enriches soil health.</p>
+          
+            <h4>Waste-to-energy (WTE)</h4>
+            <p>Technologies convert non-recyclable waste materials into electricity or heat through processes like incineration or gasification. 
+              This approach reduces landfill use and provides a renewable energy source.</p>
+            <h4></h4>
+          </div>
+          
+          <h2>Sludge Valorization</h2>
+          <div class="graph-img">
+            <img src="assets/services/sludge.png" alt="">
+          </div>
+          <!-- <ul class="servicedetails_list">
             <li>Dewatering</li>
             <li>Drying</li>
             <li>Composting</li>
-          </ul>
+          </ul> -->
         </div>
-        <div id="tab6" class="tab-pane">
+        <div id="tab4" class="tab-pane">
           <h2 class="servicedetails_title_text">Energy Production</h2>
           <div class="service_card_container new-service_card_container">
             <div class="card">
@@ -324,6 +282,74 @@
                   <div class="border_card"></div>
                 </div>
                 <h3 class="label_text">Waste to Energy</h3></a>
+            </div>
+          </div>
+        </div>
+        <div id="tab5" class="tab-pane">
+          <div class="servicedetails_image_wrapper">
+            <img src="assets/services/water_treatment_2.jpg" alt="" />
+            <div class="border_card"></div>
+          </div>
+          <h2 class="servicedetails_title_text">Waste Water Treatment</h2>
+          <div class="envi-study">
+            <h4>Design and Source Industrial, Municipal Waste Water Treatment Plants : </h4>
+            <p>
+              We develop designs that meet each client’s needs, considering environmental standards and local regulations.
+            </p>
+
+            <h4>System Installation : </h4>
+            <p>
+              We provide comprehensive installation services for plants, ranging from civil works to equipment installation and commissioning.
+            </p>
+
+            <h4> Maintenance and Technical Support:</h4>
+            <p>
+              We provide maintenance and technical support services to ensure efficient operation of plants year-round.
+            </p>
+          </div>
+          <!-- <ul class="servicedetails_list">
+            <li>Aerated Treatment</li>
+            <li>Anaerobic Digestion</li>
+            <li>Filtration</li>
+          </ul> -->
+        </div>
+        <div id="tab6" class="tab-pane">
+          <h2 class="servicedetails_title_text">Advanced Solutions</h2>
+          <div class="envi-study">
+            <!-- <h4></h4> -->
+            <!-- <p>
+              Sludge can be valorized and re-used in many applications that will allow for cost savings and off-take to various industries, 
+              energy intensive industries or even in agriculture. This treatment will allow for a zero- discharge solution that may reduce reliance on landfills. <br>
+              Potential applications include : 
+            </p> -->
+          </div>
+          <div class="service_card_container new-service_card_container">
+            <div class="card">
+              <a href="advancedservicedetails.html?tab=tab1">
+                <div class="imge_wrapper">
+                  <img src="assets/services/thermal-Hydrolysis-pre-treatment.png" alt="">
+                  <div class="border_card"></div>
+                </div>
+                <h3 class="label_text">
+                  Thermal Hydrolysis Pre-treatment
+                </h3>
+              </a>
+            </div>
+            <div class="card">
+              <a href="advancedservicedetails.html?tab=tab2">
+                <div class="imge_wrapper">
+                  <img src="assets/services/Feedstock-diversification.jpg" alt="">
+                  <div class="border_card"></div>
+                </div>
+                <h3 class="label_text">Feedstock Diversification</h3></a>
+            </div>
+            <div class="card">
+              <a href="advancedservicedetails.html?tab=tab3">
+                <div class="imge_wrapper">
+                  <img src="assets/services/order-management.jpg" alt="">
+                  <div class="border_card"></div>
+                </div>
+                <h3 class="label_text">Advanced Order Management</h3></a>
             </div>
           </div>
         </div>
@@ -373,27 +399,20 @@
             <div class="list_wrapper">
               <h3 class="list_title">OUR SERVICES</h3>
               <ul class="list_cotainer">
-                <a href="servicedetails.html"><li>Project Development</li></a>
-                <a href="servicedetails.html"> <li>Environmental Consulting</li></a>
-                <a href="servicedetails.html"> <li>Waste Water Treatment</li></a>
-              </ul>
-            </div>
-            <div class="list_wrapper">
-              <h3 class="list_title">ADVANCED SOLUTIONS</h3>
-              <ul class="list_cotainer">
-                <a href="servicedetails.html"> <li>Advanced Solutions</li></a>
-                <a href="servicedetails.html"> <li>Sludge Treatment</li></a>
-                <a href="servicedetails.html"><li>Energy Production</li></a
-                >
+                <a href="servicedetails.html?tab=tab1"><li>Project Development</li></a>
+                <a href="servicedetails.html?tab=tab2"> <li>Environmental Consulting</li></a>
+                <a href="servicedetails.html?tab=tab3"> <li>Sludge Treatment</li></a>
+                <a href="servicedetails.html?tab=tab4"><li>Energy Production</li></a>
+                <a href="servicedetails.html?tab=tab5"> <li>Waste Water Treatment</li></a>
+                <a href="servicedetails.html?tab=tab6"> <li>Advanced Solutions</li></a>
               </ul>
             </div>
             <div class="list_wrapper">
               <h3 class="list_title">COMPANY</h3>
               <ul class="list_cotainer">
                 <a href="about.html"> <li>About us</li></a>
-                <a href="contact.html">
-                  <li>Contact us</li>
-                </a>
+                <a href="foundersexperience.html"><li>Founders Experience</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
               </ul>
             </div>
           </div>
