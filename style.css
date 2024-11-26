@@ -104,7 +104,7 @@ body {
 
 .header_nav_item a {
   text-decoration: none;
-  color: #7b7b7b;
+  color: #213125;
   padding: 10px 15px;
   display: block;
 }
@@ -251,7 +251,7 @@ body {
   }
   .header_nav_item .dropdown {
     position: relative;
-    display: block;
+    /* display: block; */
   }
   .header_nav_item .dropdown{
     background: transparent;
@@ -415,7 +415,7 @@ body {
 /* about section starts here */
 .about_section {
   width: 100%;
-  padding: 8rem 3%;
+  padding: 5rem 3%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -500,7 +500,7 @@ body {
 /* client section starts here */
 .clients_section {
   width: 100%;
-  padding: 2rem 0;
+  padding: 3rem 0;
   background-color: var(--primary-white);
   background-color: #f4f4f4;
 }
@@ -509,7 +509,7 @@ body {
   font-weight: 500;
   color: var(--gray-color);
   text-transform: uppercase;
-  margin: 0 auto 2.5rem auto;
+  margin: 0 auto 1.1rem auto;
   text-align: center;
 }
 .clients-carousel {
@@ -554,7 +554,7 @@ body {
 /* new service start here */
 .services_carousel_wrapper {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   max-width: 100vw;
 }
 .services_carousel_wrapper .card {
@@ -718,7 +718,7 @@ body {
 
 /* services section starts here */
 .services_section {
-  padding: 8rem 3% 1rem 3%;
+  padding: 5rem 3% 1rem 3%;
 }
 .services_section_title {
   font-size: 90px;
@@ -927,9 +927,9 @@ body {
 
 /* founders section starts here */
 .founders_section {
-  margin-top: 7rem;
+  margin-top: 4rem;
   width: 100%;
-  padding: 4rem 3%;
+  padding: 3rem 3%;
   background-color: #f4f4f4;
 }
 .founders_title {
@@ -945,7 +945,7 @@ body {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .founders_section .carousel_nav {
@@ -1061,7 +1061,7 @@ body {
 /* empowering section starts here */
 .empowering_section {
   width: 100%;
-  padding: 10rem 3% 5rem 3%;
+  padding: 6rem 3% 5rem 3%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -1242,7 +1242,7 @@ body {
   max-width: 30rem;
 }
 .newsletter_section .label_text {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   color: var(--primary-white);
   margin-bottom: 1rem;
@@ -1530,6 +1530,9 @@ body {
   font-weight: 700;
   color: var(--primary-white);
 }
+.page_header_subtitle a:hover{
+  color: #065752;
+}
 
 .about_details_container {
   width: 100%;
@@ -1537,7 +1540,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem 3%;
+  padding: 4rem 3% 1rem;
 }
 .about_details_container .about_para {
   text-align: center;
@@ -1551,7 +1554,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 3% 9rem 3%;
+  padding: 4rem 3% 9rem 3%;
 }
 .about_our_section .about_our_data_wrapper {
   width: 100%;
@@ -1586,7 +1589,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  padding: 0 3% 6rem 3%;
+  padding: 0 3% 4rem 3%;
 }
 .empowering_card_container .empowering_card {
   background-color: var(--primary-white);
@@ -1631,7 +1634,7 @@ body {
 /* whychooseUs section starts here */
 .why_choose_section {
   width: 100%;
-  padding: 8rem 3%;
+  padding: 4rem 3%;
 }
 .why_choose-out{
   width: 100%;
@@ -1841,7 +1844,7 @@ body {
 .service_card_container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 3% 6rem 3%;
+  padding: 0 3% 5rem 3%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 80rem;
@@ -1867,10 +1870,11 @@ body {
 }
 .service_card_container .label_text {
   margin-top: 0.875rem;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 30px;
   color: #353535;
+  text-align: center;
 }
 .service_card_container .border_card {
   position: absolute;
@@ -2145,7 +2149,7 @@ body {
 /* clients page ui starts here */
 .clients_list_container {
   width: 100%;
-  padding: 1rem 15% 7rem 15%;
+  padding: 1rem 15% 5rem 15%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
@@ -2213,7 +2217,7 @@ body {
   width: 100%;
   max-width: 62rem;
   padding: 0.5rem;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 4rem auto;
   border-radius: 10px;
   overflow: hidden;
   display: grid;
@@ -2371,11 +2375,11 @@ body {
 
 /* founders experience section starts here */
 .experience_section{
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 .single-experience_section {
   width: 100%;
-  padding: 6rem 3%;
+  padding: 5rem 3%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
