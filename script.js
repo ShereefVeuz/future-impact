@@ -278,5 +278,43 @@ function scrollToTop() {
 
 
 
+//navbar dropdown menu
+document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
+  trigger.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default anchor click behavior
+    const dropdown = this.nextElementSibling; // Get the associated dropdown
+    const icon = this.querySelector('.dropdown-icon'); // Get the icon
+    const isVisible = dropdown.style.display === 'block';
+    dropdown.style.display = isVisible ? 'none' : 'block';
+    if (icon) {
+      icon.classList.toggle('open', !isVisible);
+    }
+    document.querySelectorAll('.dropdown').forEach(menu => {
+      if (menu !== dropdown) {
+        menu.style.display = 'none';
+        const otherIcon = menu.previousElementSibling.querySelector('.dropdown-icon');
+        if (otherIcon) {
+          otherIcon.classList.remove('open');
+        }
+      }
+    });
+  });
+});
+
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.header_nav_item')) {
+    document.querySelectorAll('.dropdown').forEach(menu => {
+      menu.style.display = 'none';
+      const icon = menu.previousElementSibling.querySelector('.dropdown-icon');
+      if (icon) {
+        icon.classList.remove('open');
+      }
+    });
+  }
+});
+
+//ENDnavbar dropdown menu
+
+
 
 
