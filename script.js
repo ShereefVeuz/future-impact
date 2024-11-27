@@ -132,41 +132,78 @@ $(".banner_carousel").owlCarousel({
 //   nav:true
 // });
 
-$(".services_carousel").owlCarousel({
-  loop: true,
-  nav: true,
-  // autoplay: true,
-  margin: 20,
-  autoplayTimeout: 1000,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  responsive: {
-    0: {
-      items: 1,
+
+$(document).ready(function () {
+  $(".services_carousel").owlCarousel({
+    loop: true,
+    center: true,
+    nav: false,
+    margin: 50,
+    slideBy: 1,
+    // stagePadding: 100, 
+    autoplay: false,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: {
+        items: 1,
+        // stagePadding: 50,
+      },
+      600: {
+        items: 2,
+        // stagePadding: 80,
+      },
+      1200: {
+        items: 3,
+        // stagePadding: 100,
+      },
     },
-    300: {
-      items: 1.5,
-    },
-    400: {
-      items: 2,
-    },
-    600: {
-      items: 3,
-    },
-    700: {
-      items: 3,
-    },
-    900: {
-      items: 3,
-    },
-    1200: {
-      items: 4,
-    },
-    1500: {
-      items: 4,
-    },
-  },
+  });
+
+  // Custom Navigation Events
+  $(".next_btn1").click(function () {
+    $(".services_carousel").trigger("next.owl.carousel");
+  });
+
+  $(".prev_btn1").click(function () {
+    $(".services_carousel").trigger("prev.owl.carousel");
+  });
 });
+
+
+
+$(document).ready(function () {
+  $(".project_carousel").owlCarousel({
+    loop: true,
+    nav: false,
+    margin: 10,
+    autoplay: false,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+    },
+  });
+
+  // Custom Navigation Events
+  $(".next_btn").click(function () {
+    $(".project_carousel").trigger("next.owl.carousel");
+  });
+
+  $(".prev_btn").click(function () {
+    $(".project_carousel").trigger("prev.owl.carousel");
+  });
+});
+
 
 // JavaScript to switch tabs
 function openTab(evt, tabId) {
