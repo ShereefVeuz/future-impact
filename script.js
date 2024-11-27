@@ -141,7 +141,7 @@ $(document).ready(function () {
     margin: 50,
     slideBy: 1,
     // stagePadding: 100, 
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2000,
     responsive: {
       0: {
@@ -176,7 +176,7 @@ $(document).ready(function () {
     loop: true,
     nav: false,
     margin: 10,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2000,
     responsive: {
       0: {
