@@ -660,6 +660,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   gap: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .single-service-out .imgae_wrapper{
