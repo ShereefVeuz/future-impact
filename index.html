@@ -20,8 +20,11 @@
     <link href="css/fontawesome.css" rel="stylesheet">
     <script src="js/all.js"></script>
     <script src="js/fontawesome.js"></script>
+    <script src="https://imedeli-assets.netlify.app/imedeli.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://imedeli-assets.netlify.app/imedeli.js"></script>
+  
   </head>
   <body>
     <!-- header section starts here -->
@@ -30,14 +33,6 @@
       <nav class="header_nav">
         <ul class="header_nav_items_container">
           <li class="header_nav_item active"><a href="index.html">Home</a></li>
-          <!-- <li class="header_nav_item">
-            <a href="#">About 
-              <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></a>
-            <ul class="dropdown">
-              <li><a href="about.html">Who We Are</a></li>
-              <li><a href="foundersexperience.html">Founders Experience</a></li>
-            </ul>
-          </li> -->
           <li class="header_nav_item">
             <a href="#" class="dropdown-trigger">About 
               <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span>
@@ -71,7 +66,7 @@
         <a href="about.html">
           <button class="gradient_btn banner_about_btn">About Us →</button></a
         >
-        <div class="banner_carousel_wrapper">
+        <!-- <div class="banner_carousel_wrapper">
           <div class="owl-carousel banner_carousel">
             <a href="servicedetails.html?tab=tab1">
               <div class="card">
@@ -137,17 +132,29 @@
             </a>
           </div>
           <div class="slider-counter"></div>
-        </div>
+        </div> -->
       </div>
       <div class="banner_second_section">
-        <img
+        <!-- <img
           src="./assets/future_round_icon.png"
           alt=""
           class="banner_second_section_image"
-        />
+        /> -->
       </div>
     </section>
     <!-- banner section ends here -->
+
+
+    <div class="marquee">
+      <ul>
+        <li><span class="text">Greener Future With Renewable Energy</span></li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>
+          <span class="text">Greener Future With Renewable Energy</span>
+        </li>
+      </ul>
+    </div>
 
     <!-- about section starts here -->
     <section class="about_section">
@@ -165,7 +172,7 @@
         >
       </div>
       <div class="about_second_section">
-        <img src="assets/bg-01.jpg" alt="" />
+        <img src="assets/abot_bg.jpg" alt="" />
       </div>
     </section>
 
@@ -197,153 +204,101 @@
     <!-- client section ends here -->
 
 
-
-    
-
-
-
     <!-- main services section starts here -->
-    <section class="services_section">
-      <h1 class="services_section_title">MAIN SERVICES</h1>
+    <section class="services_section pfolio" id="product-main-section">
       <div class="future-services-detls">
 
         <div class="services_carousel_wrapper">
-          <div class="owl-carousel services_carousel tiles">
-            <a href="servicedetails.html?tab=tab1" class="tile">
-              <div class="card-out">
+          <h1 class="services_section_title">MAIN SERVICES</h1>
+          <div class="single-service-out">
+            <div class="single-service">
+              <a href="servicedetails.html?tab=tab1" class="tile">
+                <div class="card-out">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/services/project-development.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Project Development</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="single-service">
+              <a href="servicedetails.html?tab=tab2" class="tile">
+                <div class="card-out">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/services/enviornment.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Environmental Consulting</h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div> -->
+            <div class="single-service">
+              <a href="servicedetails.html?tab=tab3" class="tile">
                 <div class="card">
                   <div class="imgae_wrapper">
-                    <img src="assets/services/project-development.png" alt="" />
+                    <img src="assets/services/sludge.jpeg" alt="" />
                   </div>
                 </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Project Development</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Sludge Treatment</h3>
+                    </div>
                   </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="servicedetails.html?tab=tab2" class="tile">
-              <div class="card-out">
+              </a>
+            </div>
+            <div class="single-service">
+              <a href="servicedetails.html?tab=tab4" class="tile">
                 <div class="card">
                   <div class="imgae_wrapper">
-                    <img src="assets/services/enviornment.jpg" alt="" />
+                    <img src="assets/services/energy-production.jpg" alt="" />
                   </div>
                 </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Environmental Consulting</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Energy Production</h3>
+                    </div>
                   </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="servicedetails.html?tab=tab3" class="tile">
-              <div class="card">
-                <div class="imgae_wrapper">
-                  <img src="assets/services/sludge.jpeg" alt="" />
-                </div>
-              </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Sludge Treatment</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
-                  </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
+              </a>
+            </div>
+            <div class="single-service">
+              <a href="servicedetails.html?tab=tab5" class="tile">
+                <div class="card">
+                  <div class="imgae_wrapper">
+                    <img src="assets/services/water_treatment_2.jpg" alt="" />
                   </div>
                 </div>
-            </a>
-            <a href="servicedetails.html?tab=tab4" class="tile">
-              <div class="card">
-                <div class="imgae_wrapper">
-                  <img src="assets/services/energy-production.jpg" alt="" />
-                </div>
-              </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Energy Production</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Waste Water Treatment</h3>
+                    </div>
                   </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
+              </a>
+            </div>
+            <div class="single-service">
+              <a href="servicedetails.html?tab=tab6" class="tile">
+                <div class="card">
+                  <div class="imgae_wrapper">
+                    <img src="assets/services/advanced.jpeg" alt="" />
                   </div>
                 </div>
-            </a>
-            <a href="servicedetails.html?tab=tab5" class="tile">
-              <div class="card">
-                <div class="imgae_wrapper">
-                  <img src="assets/services/water_treatment_2.jpg" alt="" />
-                </div>
-              </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Waste Water Treatment</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
+                  <div class="dtls-outr">
+                    <div class="details">
+                      <h3>Advanced Solution</h3>
+                    </div>
                   </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
-                  </div>
-                </div>
-            </a>
-            <a href="servicedetails.html?tab=tab6" class="tile">
-              <div class="card">
-                <div class="imgae_wrapper">
-                  <img src="assets/services/advanced.jpeg" alt="" />
-                </div>
-              </div>
-                <div class="dtls-outr">
-                  <div class="details">
-                    <h3>Advanced Solution</h3>
-                    <p>Develop feasibility study
-                      Secure project financing</p>
-                  </div>
-                  <div class="details-btn">
-                      <button class="gradient_btn"> Read More </button>
-                  </div>
-                </div>
-            </a>
-          </div>
-          <div class="slider-counter"></div>
-          <div class="carousel_nav">
-            <button class="prev_btn1">
-              <svg
-                viewBox="0 0 28 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <button class="next_btn1">
-              <svg
-                viewBox="0 0 28 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -352,16 +307,187 @@
     <!-- main services section end here -->
 
 
+    <section class="home_founders_exp">
+      <div class="workshop-container">
+        <!-- Left Content -->
+        <div class="left-content">
+          <div class="title_section">
+            <h2 class="founders_exp_title">Founders <br /> Experience</h2>
+          </div>
+          <p>
+            Join our upcoming workshops, retreats, and events designed to enhance your well-being.
+          </p>
+
+          <div class="carousel_nav">
+                <button class="prev_btn">
+                  <svg
+                    viewBox="0 0 28 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="next_btn">
+                  <svg
+                    viewBox="0 0 28 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+        </div>
+      
+        <!-- Right Slider -->
+        <div class="right-slider">
+
+          <div class="founders-detls">
+            <div class="founders_carousel_wrapper">
+              <div class="owl-carousel project_carousel tiles">
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/KACARE.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>KACARE</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/Jeddah-Yacht-Club.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Jeddah Yacht Club (JYC)</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/Boulevard-World.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Boulevard World</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/jeddah.jpeg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Jeddah Pier</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/AlAridHospital.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Al Arid Hospital</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/Geothermal-exploration-at-NEOM.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Geothermal exploration at NEOM</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/GeothermalcoolinginAlUla.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Geothermal cooling in Al Ula</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="foundersexperience.html" class="tile">
+                  <div class="card">
+                    <div class="imgae_wrapper">
+                      <img src="assets/projects/Carbonsequestrationwith4401inOman.jpg" alt="Project Development" />
+                    </div>
+                    <div class="content_overlay">
+                      <h3>Carbon sequestration with 4401 in Oman</h3>
+                    </div>
+                  </div>
+                </a> 
+              </div>
+              <div class="slider-counter"></div>
+
+              <!-- <div class="owl-dots">
+                <button role="button" class="owl-dot"><span></span></button>
+                <button role="button" class="owl-dot active"><span></span></button>
+                <button role="button" class="owl-dot"><span></span></button>
+              </div> -->
+              
+              <!-- <div class="carousel_nav">
+                <button class="prev_btn">
+                  <svg
+                    viewBox="0 0 28 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="next_btn">
+                  <svg
+                    viewBox="0 0 28 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4393 1.3125L14.4393 31.3125M14.4393 31.3125L27.4395 18.8125M14.4393 31.3125L1.4391 18.8125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
     <!-- founders section starts here -->
     <section class="home_founders_exp">
-      <div class="title_section">
-        <h2 class="founders_exp_title">Our Projects</h2>
-      </div>
+      <!-- <div class="title_section">
+        <h2 class="founders_exp_title">Founders Experience</h2>
+      </div> -->
 
-      <div class="founders-detls">
+      <!-- <div class="founders-detls">
         <div class="founders_carousel_wrapper">
           <div class="owl-carousel project_carousel tiles">
-
             <a href="foundersexperience.html" class="tile">
               <div class="card">
                 <div class="imgae_wrapper">
@@ -441,8 +567,7 @@
                   <h3>Carbon sequestration with 4401 in Oman</h3>
                 </div>
               </div>
-            </a>
-            
+            </a> 
           </div>
           <div class="slider-counter"></div>
           <div class="carousel_nav">
@@ -473,9 +598,8 @@
               </svg>
             </button>
           </div>
-
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- founders section ends here -->
 
@@ -542,7 +666,7 @@
 
 
     <!--line-->
-      <div class="sec-lines">
+      <!-- <div class="sec-lines">
         <div class="container full-height">
           <div class="line-item"></div>
           <div class="line-item"></div>
@@ -550,7 +674,7 @@
           <div class="line-item"></div>
           <div class="line-item"></div>
         </div>
-      </div>
+      </div> -->
       
     <!--ENDline-->
 
@@ -581,7 +705,7 @@
             <h3 class="list_title">OUR SERVICES</h3>
             <ul class="list_cotainer">
               <a href="servicedetails.html?tab=tab1"><li>Project Development</li></a>
-              <a href="servicedetails.html?tab=tab2"> <li>Environmental Consulting</li></a>
+              <!-- <a href="servicedetails.html?tab=tab2"> <li>Environmental Consulting</li></a> -->
               <a href="servicedetails.html?tab=tab3"> <li>Sludge Treatment</li></a>
               <a href="servicedetails.html?tab=tab4"><li>Energy Production</li></a>
               <a href="servicedetails.html?tab=tab5"> <li>Waste Water Treatment</li></a>
@@ -636,5 +760,6 @@
     <!-- footer ends here -->
 
     <script src="script.js"></script>
+    <script src="assets/js/animation.js"></script>
   </body>
 </html>

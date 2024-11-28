@@ -133,41 +133,72 @@ $(".banner_carousel").owlCarousel({
 // });
 
 
-$(document).ready(function () {
-  $(".services_carousel").owlCarousel({
-    loop: true,
-    center: true,
-    nav: false,
-    margin: 50,
-    slideBy: 1,
-    // stagePadding: 100, 
-    autoplay: true,
-    autoplayTimeout: 2000,
-    responsive: {
-      0: {
-        items: 1,
-        // stagePadding: 50,
-      },
-      600: {
-        items: 2,
-        // stagePadding: 80,
-      },
-      1200: {
-        items: 3,
-        // stagePadding: 100,
-      },
-    },
+// service //
+
+// $(document).ready(function () {
+//   $(".services_carousel").owlCarousel({
+//     loop: true,
+//     // center: true,
+//     nav: false,
+//     margin: 30,
+//     slideBy: 1, 
+//     autoplay: false,
+//     autoplayTimeout: 2000,
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
+//       600: {
+//         items: 2,
+//       },
+//       1200: {
+//         items: 4,
+//       },
+//     },
+//   });
+
+//   $(".next_btn1").click(function () {
+//     $(".services_carousel").trigger("next.owl.carousel");
+//   });
+
+//   $(".prev_btn1").click(function () {
+//     $(".services_carousel").trigger("prev.owl.carousel");
+//   });
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".right-slider");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener("mousedown", (e) => {
+    isDown = true;
+    slider.classList.add("active");
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
   });
 
-  // Custom Navigation Events
-  $(".next_btn1").click(function () {
-    $(".services_carousel").trigger("next.owl.carousel");
+  slider.addEventListener("mouseleave", () => {
+    isDown = false;
+    slider.classList.remove("active");
   });
 
-  $(".prev_btn1").click(function () {
-    $(".services_carousel").trigger("prev.owl.carousel");
+  slider.addEventListener("mouseup", () => {
+    isDown = false;
+    slider.classList.remove("active");
+  });
+
+  slider.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; // Adjust scroll speed
+    slider.scrollLeft = scrollLeft - walk;
   });
 });
+
 
 
 
@@ -175,21 +206,19 @@ $(document).ready(function () {
   $(".project_carousel").owlCarousel({
     loop: true,
     nav: false,
+    dots: false,
     margin: 10,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     responsive: {
       0: {
         items: 1,
       },
-      400: {
+      600: {
         items: 2,
       },
-      600: {
-        items: 3,
-      },
       1200: {
-        items: 4,
+        items: 3,
       },
     },
   });
@@ -242,45 +271,6 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
-
-//graph
-// var data = {
-//   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-//   datasets: [{
-//     label: "Dataset #1",
-//     backgroundColor: "#25989063",
-//     borderColor: "#4bb077",
-//     borderWidth: 2,
-//     hoverBackgroundColor: "rgba(255,99,132,0.4)",
-//     hoverBorderColor: "rgba(255,99,132,1)",
-//     data: [65, 59, 20, 81, 56, 55, 40],
-//   }]
-// };
-
-// var options = {
-//   maintainAspectRatio: false,
-//   scales: {
-//     y: {
-//       stacked: true,
-//       grid: {
-//         display: true,
-//         color: "rgba(255,99,132,0.2)"
-//       }
-//     },
-//     x: {
-//       grid: {
-//         display: false
-//       }
-//     }
-//   }
-// };
-
-// new Chart('chart', {
-//   type: 'bar',
-//   options: options,
-//   data: data
-// });
 
 
   // Tab sevice clicked time go to same tab 
