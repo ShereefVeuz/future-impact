@@ -133,38 +133,34 @@ $(".banner_carousel").owlCarousel({
 // });
 
 
-// service //
 
-// $(document).ready(function () {
-//   $(".services_carousel").owlCarousel({
-//     loop: true,
-//     // center: true,
-//     nav: false,
-//     margin: 30,
-//     slideBy: 1, 
-//     autoplay: false,
-//     autoplayTimeout: 2000,
-//     responsive: {
-//       0: {
-//         items: 1,
-//       },
-//       600: {
-//         items: 2,
-//       },
-//       1200: {
-//         items: 4,
-//       },
-//     },
-//   });
+// product-slider
+$('.main-sr .owl-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    780: {
+      items: 2
+    },
+    900: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    },
+    1300: {
+      items: 4
+    }
+  }
+})
+// close
 
-//   $(".next_btn1").click(function () {
-//     $(".services_carousel").trigger("next.owl.carousel");
-//   });
-
-//   $(".prev_btn1").click(function () {
-//     $(".services_carousel").trigger("prev.owl.carousel");
-//   });
-// });
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -341,6 +337,99 @@ document.addEventListener('click', function (e) {
 });
 
 //ENDnavbar dropdown menu
+
+
+
+// line rotaton 1
+const vertical = document.querySelector(".anim1 .vertical");
+const diagonal1 = document.querySelector(".anim1 .diagonal1");
+const diagonal2 = document.querySelector(".anim1 .diagonal2");
+const diagonal3 = document.querySelector(".anim1 .diagonal3");
+
+vertical.style.transform = "rotate(0deg)";
+diagonal1.style.transform = "rotate(45deg)";
+diagonal2.style.transform = "rotate(90deg)";
+diagonal3.style.transform = "rotate(140deg)";
+
+let angle = 0;
+setInterval(() => {
+  angle += 1;
+  
+  vertical.style.transform = `rotate(${angle}deg)`;
+
+  diagonal1.style.transform = `rotate(${45 + angle}deg)`;
+  diagonal2.style.transform = `rotate(${90 + angle}deg)`;
+  diagonal3.style.transform = `rotate(${140 + angle}deg)`;
+}, 10);
+
+// line rotaton 2
+const vertical1 = document.querySelector(".anim2 .vertical");
+const diagonal11 = document.querySelector(".anim2 .diagonal1");
+const diagonal21 = document.querySelector(".anim2 .diagonal2");
+const diagonal31 = document.querySelector(".anim2 .diagonal3");
+
+vertical1.style.transform = "rotate(0deg)";
+diagonal11.style.transform = "rotate(45deg)";
+diagonal21.style.transform = "rotate(90deg)";
+diagonal31.style.transform = "rotate(140deg)";
+
+let angle1 = 0;
+setInterval(() => {
+  angle1 += 1;
+  
+  vertical1.style.transform = `rotate(${angle}deg)`;
+
+  diagonal11.style.transform = `rotate(${45 + angle}deg)`;
+  diagonal21.style.transform = `rotate(${90 + angle}deg)`;
+  diagonal31.style.transform = `rotate(${140 + angle}deg)`;
+}, 10);
+
+// counter
+let counter = document.querySelectorAll(".counter")
+let arr = Array.from(counter)
+
+arr.map((item)=>{
+    let count = 0
+    function CounterUp(){
+        count++
+        item.innerHTML = count
+        if(count == item.dataset.number){
+            clearInterval(stop);
+        }
+    }
+    let stop = setInterval(
+        function(){
+            CounterUp();
+        },100/item.dataset.speed
+    );
+})
+
+
+//image jump
+let goingUp = true; 
+function jumpImage() { 
+    const image = document.getElementById('image'); 
+    if (goingUp) { 
+        image.style.top = '0'; 
+    } else { 
+        image.style.top = '5%'; 
+    } 
+    goingUp = !goingUp; 
+} setInterval(jumpImage, 1000);
+//end
+
+//image jump
+let goingUpto = true; 
+function jumpImage2() { 
+    const images = document.getElementById('images'); 
+    if (goingUpto) { 
+        images.style.top = '0'; 
+    } else { 
+        images.style.top = '5%'; 
+    } 
+    goingUpto = !goingUpto; 
+} setInterval(jumpImage2, 1000);
+//end
 
 
 
